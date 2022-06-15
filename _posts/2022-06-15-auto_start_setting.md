@@ -8,15 +8,20 @@ title:  "Ubuntu AUTO start setting"
 
 방법은 총 5가지가 있는데 본인에게 맞는 방법을 선택하면 된다.
 
-## 1. Crontap 
+## 1. Crontap
 
-Crontap은 Cron이라는 데몬이 어떤 프로그램을 자동으로 실행시킬지 적어놓는 리스트라고 보면된다. 
+Crontap은 Cron이라는 데몬이 어떤 프로그램을 자동으로 실행시킬지 적어놓는 리스트라고 보면된다.
 
 ### Crontap 설정방법
+Crontap 사용법은 매우 간단하다. 
+
+하지만 단점이 권한설정에 조금 복잡한데 이는 아래에서 다루겠다.
 
 in terminal 
 
 ```
 crontab -e
 ```
+
+
 
