@@ -54,5 +54,24 @@ SUBSYSTEM=="tty", ATTRS{idVendor}=="your_number", ATTRS{idProduct}=="your_number
 
 만약 여러개의 장치를 고정하려면 다음줄에 똑같은 양식으로 입력하면 된다. 
 
+```
+sudo service udev reload
+sudo service udev restart
+```
+
+또는 
+
+```
+sudo udevadm control --reload-rules
+sudo service udev restart
+```
+
+이후 장치가 잘 인식되는지 확인한다. 
+
+```
+ls -al /dev/tty*
+```
+
+
 
 
